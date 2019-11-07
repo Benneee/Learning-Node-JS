@@ -2,8 +2,8 @@
 A dump repo for all my Node JS learning code....
 
 ## Resources
-MDN
-Learnyounode
+MDN,
+learnyounode
 
 ## Books 
 Beginning Node JS, 
