@@ -37,11 +37,11 @@ exports.book_delete_post = function(req, res) {
 };
 
 // Display Book update form on GET request
-exports.book_list_update_get = function(req, res) {
+exports.book_update_get = function(req, res) {
   res.send('NOT IMPLEMENTED: Book update GET');
 };
 
 // Handle Book update on POST request
-exports.book_list_update_post = function(req, res) {
+exports.book_update_post = function(req, res) {
   res.send('NOT IMPLEMENTED: Book update POST');
 };
