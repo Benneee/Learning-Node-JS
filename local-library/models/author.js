@@ -15,6 +15,11 @@ AuthorSchema.virtual('lifespan').get(function() {
   ).toString();
 });
 
+// Virtual for author's full name
+AuthorSchema.virtual('name').get(function() {
+  return this.first_name +', '+this.family_name;
+})
+
 //  Virtual for author's url
 AuthorSchema.virtual('url').get(function() {
   return '/catalog/author/' + this._id;
