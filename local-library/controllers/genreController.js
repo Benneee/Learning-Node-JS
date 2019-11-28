@@ -114,7 +114,7 @@ exports.genre_create_post = [
               }
             })
           }
-        } )
+        })
     }
   }
 ]
