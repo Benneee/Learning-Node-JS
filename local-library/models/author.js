@@ -11,9 +11,13 @@ var AuthorSchema = new Schema({
 
 //  Virtual for author's lifespan
 AuthorSchema.virtual('lifespan').get(function() {
-  return (
-    this.date_of_death.getYear() - this.date_of_birth.getYear()
-  ).toString();
+  if (this.date_of_death && this.date_of_birth) {
+    return (
+      this.date_of_death.getYear() - this.date_of_birth.getYear()
+    ).toString();
+  } else {
+    return '';
+  }
 });
 
 // Virtual for author's full name
